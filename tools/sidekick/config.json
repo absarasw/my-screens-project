@@ -9,7 +9,8 @@
       "id": "preview-sheet",
       "title": "Preview Sheet",
       "event": "preview-sheet",
-       "url": "/tools/myPlugin/index.html",
+      "isPalette": true,
+      "url": "/tools/myPlugin/index.html",
       "excludePaths": [ "**" ],
       "includePaths": [ "**spreadsheets**" ]
     }
