@@ -69,7 +69,7 @@ const previewAndRedirect = async () => {
         method: 'POST',
   };
   previewAndCacheClear(owner, repo, ref, url.pathname);
-  //window.location.replace(previewHost);
+  window.location.replace(pagePath);
 }
 
 previewAndRedirect();
