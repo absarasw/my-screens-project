@@ -28,7 +28,7 @@ async function previewAndRedirect() {
   const status = JSON.parse(await fetchData(statusUrl));
   console.log("status is " + JSON.stringify(status));
   if(status.preview && status.preview.url) {
-    console.log("status.preview.url" + status.preview.url);
+    console.log("status.preview.url = " + status.preview.url);
   } else {
     console.log("preview URL no present");
   }
@@ -36,7 +36,9 @@ async function previewAndRedirect() {
 
   const previewUrl = status.preview.url;
   const url = new URL(previewUrl);
-  console.log("path is " + url.pathname);
+  const sheetPath = url.pathname
+  console.log("sheetPath is " + sheetPath);
+  const pagePath = sheetPath.slice(0, 5);//remove .json
   let response;
     const options = {
         method: 'POST',
