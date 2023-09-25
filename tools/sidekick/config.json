@@ -9,6 +9,7 @@
       "id": "preview-sheet",
       "title": "Preview Sheet",
       "event": "preview-sheet",
+      "excludePaths": [ "**" ],
       "includePaths": [ "**spreadsheets**" ]
     }
   ]
