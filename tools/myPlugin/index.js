@@ -30,7 +30,7 @@ const previewAndCacheClear = async (owner, repo, ref, path) => {
   }
 
 
-  response = await fetch(`https://admin.hlx.page/cache/${orgName}/${repoName}/${ref}/${path}`, options);
+  response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
     
   if (response.ok) {
     console.log(`Purge cache ${new Date().toLocaleString()}`);
