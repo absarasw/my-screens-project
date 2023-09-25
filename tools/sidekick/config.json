@@ -11,6 +11,7 @@
       "event": "preview-sheet",
       "passConfig": true,
       "passReferrer": true,
+      "isPalette": true,
       "url": "/tools/myPlugin/index.html",
       "excludePaths": [ "**" ],
       "includePaths": [ "**spreadsheets**" ]
