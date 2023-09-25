@@ -4,6 +4,12 @@
     {
       "id": "edit-preview",
       "excludePaths": [ "**spreadsheets**" ]
+    },
+    {
+      "id": "preview-sheet",
+      "title": "Preview Sheet",
+      "event": "preview-sheet",
+      "includePaths": [ "**spreadsheets**" ]
     }
   ]
 }
