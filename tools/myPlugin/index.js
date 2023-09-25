@@ -15,7 +15,7 @@ const fetchData = async (url, option = {}) => {
   };
 
 
-const previewAndCacheClear = (owner, repo, ref, path) => {
+const previewAndCacheClear = async (owner, repo, ref, path) => {
   let response;
   const options = {
     method: 'POST',
