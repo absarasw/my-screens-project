@@ -21,7 +21,7 @@ async function previewAndRedirect() {
   console.log('location is ' + window.location.href);
   console.log("previewHost = " + previewHost);
   console.log("statusUrl = " + statusUrl);
-  const status = fetchData(statusUrl);
+  const status = await fetchData(statusUrl);
   console.log("status is " + JSON.stringify(status));
   //window.location.replace(previewHost);
 }
