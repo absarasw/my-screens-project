@@ -1,4 +1,4 @@
-const fetchData = async (url) => {
+const fetchData = async (url, option = {}) => {
     let result = '';
     try {
       result = fetch(url)
@@ -27,6 +27,28 @@ async function previewAndRedirect() {
   console.log("statusUrl = " + statusUrl);
   const status = JSON.parse(await fetchData(statusUrl));
   console.log("status is " + JSON.stringify(status));
+  if(status.preview && status.preview.url) {
+    console.log("status.preview.url" + status.preview.url);
+  } else {
+    console.log("preview URL no present");
+  }
+
+
+  const previewUrl = status.preview.url;
+  const url = new URL(previewUrl);
+  console.log("path is " + url.pathname);
+  let response;
+    const options = {
+        method: 'POST',
+    };
+    
+    response = await fetch(`https://admin.hlx.page/preview/${owner}/${repo}/${ref}/${url.pathname}`, options);
+
+    if (response.ok) {
+        console.log(`Document Previewed at ${new Date().toLocaleString()}`);
+    } else {
+        throw new Error(`Could not previewed. Status: ${response.status}`);
+    }
   //window.location.replace(previewHost);
 }
 
