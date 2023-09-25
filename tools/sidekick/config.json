@@ -1,0 +1,9 @@
+{
+  "project": "My Screen Project",
+  "plugins": [
+    {
+      "id": "edit-preview",
+      "excludePaths": [ "**" ]
+    }
+  ]
+}
