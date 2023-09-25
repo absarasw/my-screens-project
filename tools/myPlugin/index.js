@@ -1,3 +1,18 @@
+const fetchData = async (url) => {
+    let result = '';
+    try {
+      result = fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`request to fetch ${url} failed with status code ${response.status}`);
+          }
+          return response.text();
+        });
+      return Promise.resolve(result);
+    } catch (e) {
+      throw new Error(`request to fetch ${url} failed with status code with error ${e}`);
+    }
+  };
 
 async function previewAndRedirect() {
   var params = new URLSearchParams(window.location.search);
@@ -6,7 +21,9 @@ async function previewAndRedirect() {
   console.log('location is ' + window.location.href);
   console.log("previewHost = " + previewHost);
   console.log("statusUrl = " + statusUrl);
-  window.location.replace(previewHost);
+  const status = fetchData(statusUrl);
+  console.log("status is " + JSON.stringify(status));
+  //window.location.replace(previewHost);
 }
 
 previewAndRedirect();
