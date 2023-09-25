@@ -15,13 +15,17 @@ const fetchData = async (url) => {
   };
 
 async function previewAndRedirect() {
-  var params = new URLSearchParams(window.location.search);
-  var previewHost = `https://${params.get("ref")}--${params.get("repo")}--${params.get("owner")}.hlx.page`;
-  var statusUrl = `https://admin.hlx.page/status/${params.get("owner")}/${params.get("repo")}/${params.get("ref")}?editUrl=${params.get("referrer")}`;
+  const params = new URLSearchParams(window.location.search);
+  const ref = params.get("ref");
+  const repo = params.get("repo");
+  const owner = params.get("owner");
+  const referrer = params.get("referrer");
+  const previewHost = `https://${ref}--${repo}--${owner}.hlx.page`;
+  const statusUrl = `https://admin.hlx.page/status/${owner}/${repo}/${ref}?editUrl=${referrer}`;
   console.log('location is ' + window.location.href);
   console.log("previewHost = " + previewHost);
   console.log("statusUrl = " + statusUrl);
-  const status = await fetchData(statusUrl);
+  const status = JSON.parse(await fetchData(statusUrl));
   console.log("status is " + JSON.stringify(status));
   //window.location.replace(previewHost);
 }
