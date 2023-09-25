@@ -68,7 +68,7 @@ const previewAndRedirect = async () => {
     const options = {
         method: 'POST',
   };
-  previewAndCacheClear(owner, repo, ref, sheetPath);
+  await previewAndCacheClear(owner, repo, ref, sheetPath);
   window.location.replace(pagePath);
 }
 
