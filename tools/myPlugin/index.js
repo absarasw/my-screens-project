@@ -6,6 +6,7 @@ async function previewAndRedirect() {
   console.log('location is ' + window.location.href);
   console.log("previewHost = " + previewHost);
   console.log("statusUrl = " + statusUrl);
+  window.location.replace(previewHost);
 }
 
 previewAndRedirect();
