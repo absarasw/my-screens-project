@@ -1,5 +1,5 @@
 
-async function previewAndRedirec() {
+async function previewAndRedirect() {
   var params = new URLSearchParams(window.location.search);
   var previewHost = `https://${params.get("ref")}--${params.get("repo")}--${params.get("owner")}.hlx.page`;
   var statusUrl = `https://admin.hlx.page/status/${params.get("owner")}/${params.get("repo")}/${params.get("ref")}?editUrl=${params.get("referrer")}`;
