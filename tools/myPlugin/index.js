@@ -14,7 +14,32 @@ const fetchData = async (url, option = {}) => {
     }
   };
 
-async function previewAndRedirect() {
+
+const previewAndCacheClear = (owner, repo, ref, path) => {
+  let response;
+  const options = {
+    method: 'POST',
+  };
+    
+  response = await fetch(`https://admin.hlx.page/preview/${owner}/${repo}/${ref}/${path}`, options);
+
+  if (response.ok) {
+    console.log(`Document Previewed at ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not previewed. Status: ${response.status}`);
+  }
+
+
+  response = await fetch(`https://admin.hlx.page/cache/${orgName}/${repoName}/${ref}/${path}`, options);
+    
+  if (response.ok) {
+    console.log(`Purge cache ${new Date().toLocaleString()}`);
+   } else {
+     throw new Error(`Could not purge cache. Status: ${response.status}`);
+  }
+}
+
+const previewAndRedirect = async () => {
   const params = new URLSearchParams(window.location.search);
   const ref = params.get("ref");
   const repo = params.get("repo");
@@ -42,15 +67,8 @@ async function previewAndRedirect() {
   let response;
     const options = {
         method: 'POST',
-    };
-    
-    response = await fetch(`https://admin.hlx.page/preview/${owner}/${repo}/${ref}/${url.pathname}`, options);
-
-    if (response.ok) {
-        console.log(`Document Previewed at ${new Date().toLocaleString()}`);
-    } else {
-        throw new Error(`Could not previewed. Status: ${response.status}`);
-    }
+  };
+  previewAndCacheClear(owner, repo, ref, url.pathname);
   //window.location.replace(previewHost);
 }
 
