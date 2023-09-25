@@ -3,7 +3,7 @@
   "plugins": [
     {
       "id": "edit-preview",
-      "excludePaths": [ "**screens**" ]
+      "excludePaths": [ "**spreadsheets**" ]
     }
   ]
 }
