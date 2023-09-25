@@ -63,7 +63,7 @@ const previewAndRedirect = async () => {
   const url = new URL(previewUrl);
   const sheetPath = url.pathname
   console.log("sheetPath is " + sheetPath);
-  const pagePath = sheetPath.slice(0, 5);//remove .json
+  const pagePath = sheetPath.slice(0, -5);//remove .json
   let response;
     const options = {
         method: 'POST',
