@@ -12,7 +12,7 @@
 
 
 const sk = document.querySelector('helix-sidekick');
-sk.addEventListener('custom:generate-email-template', async () => {
+sk.addEventListener('custom:preview-sheet', async () => {
     setTimeout(() => {
       alert('BUTTON CLICKED');
     }, 1000);
