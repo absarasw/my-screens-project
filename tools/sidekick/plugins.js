@@ -27,6 +27,7 @@ sk.addEventListener('custom:publish-channel', async (e) => {
   const repo = config.repo;
   const owner = config.owner;
   const host = config.host;
+  const path = status.webPath;
     
   response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${path}`, options);
 
@@ -45,8 +46,25 @@ sk.addEventListener('custom:publish-channel', async (e) => {
      throw new Error(`Could not purge cache. Status: ${response.status}`);
   }
 
+  const sheetPath = `${path}.json`;
+
+  response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${sheetPath}`, options);
+
+  if (response.ok) {
+    console.log(`Document Published at ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not previewed. Status: ${response.status}`);
+  }
+
+  response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${sheetPath}`, options);
+    
+  if (response.ok) {
+    console.log(`Purge cache ${new Date().toLocaleString()}`);
+   } else {
+     throw new Error(`Could not purge cache. Status: ${response.status}`);
+  }
+    
   const status = e.detail.data.status;
-  const path = status.webPath;
   const prodUrl = `{host}{path}`;
   window.location.replace(prodUrl);
   
