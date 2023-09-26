@@ -12,7 +12,7 @@
 
 
 const sk = document.querySelector('helix-sidekick');
-sk.addEventListener('custom:preview-sheet', async () => {
+sk.addEventListener('custom:publish-channel', async () => {
     setTimeout(() => {
       alert('BUTTON CLICKED');
     }, 1000);
