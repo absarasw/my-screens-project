@@ -1,0 +1,55 @@
+{
+  "version": "3.0",
+  "contentDelivery": {
+    "providers": [
+      {
+        "name": "franklin",
+        "endpoint": "/"
+      }
+    ],
+    "defaultProvider": "franklin"
+  },
+  "timestamp": 1695728266112,
+  "entries": [
+    {
+      "path": "/content/screens/menus/snacksprintpos.html",
+      "timestamp": 1695728264544
+    },
+    {
+      "path": "/scripts/lib-franklin.js",
+      "timestamp": 1686032212000
+    },
+    {
+      "path": "/scripts/scripts.js",
+      "timestamp": 1695722900000
+    },
+    {
+      "path": "/styles/styles.css",
+      "timestamp": 1686032212000
+    },
+    {
+      "path": "/scripts/delayed.js",
+      "timestamp": 1686032212000
+    },
+    {
+      "path": "/blocks/columns/columns.css",
+      "timestamp": 1686032210000
+    },
+    {
+      "path": "/blocks/columns/columns.js",
+      "timestamp": 1686032211000
+    },
+    {
+      "path": "/blocks/menutable/menutable.js",
+      "timestamp": 1688471351000
+    },
+    {
+      "path": "/blocks/menutable/menutable.css",
+      "timestamp": 1693890759000
+    },
+    {
+      "path": "/blocks/menutable/qrcode.min.js",
+      "timestamp": 1686032212000
+    }
+  ]
+}

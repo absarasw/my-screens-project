@@ -9,11 +9,11 @@
     ],
     "defaultProvider": "franklin"
   },
-  "timestamp": 1689841261856,
+  "timestamp": 1695728264349,
   "entries": [
     {
       "path": "/content/screens/menus/snack-sprint-v2.html",
-      "timestamp": 1688471489000
+      "timestamp": 1695728258741
     },
     {
       "path": "/scripts/lib-franklin.js",
@@ -21,7 +21,7 @@
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1686032212000
+      "timestamp": 1695722900000
     },
     {
       "path": "/styles/styles.css",
@@ -65,7 +65,7 @@
     },
     {
       "path": "/blocks/menutable/menutable.css",
-      "timestamp": 1686032211000
+      "timestamp": 1693890759000
     },
     {
       "path": "/blocks/menutable/qrcode.min.js",

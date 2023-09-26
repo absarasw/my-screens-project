@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/menus/snack-sprint-v2.manifest.json",
-      "lastModified": "2023-07-04T11:51:29.000Z",
+      "lastModified": "2023-09-26T11:37:38.741Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -16,6 +16,23 @@
       "externalId": "/content/screens/menus/snack-sprint-v2",
       "title": "Snack Sprint",
       "liveUrl": "https://sample-screens-project.aem-screens.com/content/screens/menus/snack-sprint-v2.html"
+    },
+    {
+      "manifestPath": "/content/screens/menus/snacksprintpos.manifest.json",
+      "lastModified": "2023-09-26T11:37:44.544Z",
+      "hierarchy": [
+        {
+          "title": "screens",
+          "path": "/content/screens"
+        },
+        {
+          "title": "menus",
+          "path": "/content/screens/menus"
+        }
+      ],
+      "externalId": "/content/screens/menus/snacksprintpos",
+      "title": "This is a test doc",
+      "liveUrl": "https://www.adaptive-renditions.aem-screens.com/content/screens/menus/snacksprintpos.html"
     }
   ],
   "metadata": {
