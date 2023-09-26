@@ -14,6 +14,15 @@
       "url": "/tools/myPlugin/index.html",
       "excludePaths": [ "**" ],
       "includePaths": [ "**spreadsheets**" ]
+    },
+    {
+      "id": "publish-channel",
+      "title": "Publish",
+      "event": "publish-channel",
+      "passConfig": true,
+      "passReferrer": true,
+      "url": "/tools/publishChannel/index.html",
+      "environments": ["preview"]
     }
   ]
 }
