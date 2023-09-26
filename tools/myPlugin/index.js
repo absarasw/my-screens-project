@@ -69,19 +69,8 @@ const previewAndRedirect = async () => {
         method: 'POST',
   };
   await previewAndCacheClear(owner, repo, ref, sheetPath);
-
-  if (document.querySelector('helix-sidekick')) {
-    if(window.hlx.sidekickConfig) {
-        console.log("sidekick config is present");
-    }
-  } else {
-    document.addEventListener('helix-sidekick-ready', () => { 
-      if(window.hlx.sidekickConfig) {
-        console.log("2. sidekick config is present");
-      }                                                          
-    }, { once: true });
-  }
-  //window.location.replace(pagePath);
+  await previewAndCacheClear(owner, repo, ref, pagePath);
+  window.location.replace(pagePath);
 }
 
 previewAndRedirect();
