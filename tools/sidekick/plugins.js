@@ -18,4 +18,36 @@ sk.addEventListener('custom:publish-channel', async (e) => {
     } else {
       console.log("details not available");
     }
+    let response;
+  const options = {
+    method: 'POST',
+  };
+  const config = e.details.data.config;
+  const ref = config.ref;
+  const repo = config.repo;
+  const owner = config.owner;
+  const host = config.host;
+    
+  response = await fetch(`https://admin.hlx.page/live/${owner}/${repo}/${ref}/${path}`, options);
+
+  if (response.ok) {
+    console.log(`Document Published at ${new Date().toLocaleString()}`);
+  } else {
+    throw new Error(`Could not previewed. Status: ${response.status}`);
+  }
+
+
+  response = await fetch(`https://admin.hlx.page/cache/${owner}/${repo}/${ref}/${path}`, options);
+    
+  if (response.ok) {
+    console.log(`Purge cache ${new Date().toLocaleString()}`);
+   } else {
+     throw new Error(`Could not purge cache. Status: ${response.status}`);
+  }
+
+  const status = e.detail.data.status;
+  const path = status.webPath;
+  const prodUrl = `{host}{path}`;
+  window.location.replace(prodUrl);
+  
 });
