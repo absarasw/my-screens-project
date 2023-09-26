@@ -70,7 +70,12 @@ const previewAndRedirect = async () => {
   };
   await previewAndCacheClear(owner, repo, ref, sheetPath);
   await previewAndCacheClear(owner, repo, ref, pagePath);
-  window.location.replace(pagePath);
+
+  const configUrl =  `https://admin.hlx.page/sidekick/${owner}/${repo}/${ref}/config.json`;
+  const config = JSON.parse(await fetchData(configUrl));
+  const previewHost = config.previewHost;
+    
+  window.location.replace(`https://${previewHost}${pagePath}`);
 }
 
 previewAndRedirect();
