@@ -9,47 +9,47 @@
     ],
     "defaultProvider": "franklin"
   },
-  "timestamp": 1695728931143,
+  "timestamp": 1695729075126,
   "entries": [
     {
       "path": "/content/screens/menus/snacksprintpos.html",
-      "timestamp": 1695728930306
+      "timestamp": 1695729074022
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1686032212000
+      "timestamp": 1695728938000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1695722900000
+      "timestamp": 1695728938000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1686032212000
+      "timestamp": 1695728938000
     },
     {
       "path": "/scripts/delayed.js",
-      "timestamp": 1686032212000
+      "timestamp": 1695728938000
     },
     {
       "path": "/blocks/columns/columns.css",
-      "timestamp": 1686032210000
+      "timestamp": 1695728937000
     },
     {
       "path": "/blocks/columns/columns.js",
-      "timestamp": 1686032211000
+      "timestamp": 1695728937000
     },
     {
       "path": "/blocks/menutable/menutable.js",
-      "timestamp": 1688471351000
+      "timestamp": 1695728937000
     },
     {
       "path": "/blocks/menutable/menutable.css",
-      "timestamp": 1693890759000
+      "timestamp": 1695728937000
     },
     {
       "path": "/blocks/menutable/qrcode.min.js",
-      "timestamp": 1686032212000
+      "timestamp": 1695728937000
     }
   ]
 }

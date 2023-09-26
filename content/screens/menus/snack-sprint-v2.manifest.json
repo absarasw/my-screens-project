@@ -9,23 +9,23 @@
     ],
     "defaultProvider": "franklin"
   },
-  "timestamp": 1695728930085,
+  "timestamp": 1695729073878,
   "entries": [
     {
       "path": "/content/screens/menus/snack-sprint-v2.html",
-      "timestamp": 1695728928253
+      "timestamp": 1695729072337
     },
     {
       "path": "/scripts/lib-franklin.js",
-      "timestamp": 1686032212000
+      "timestamp": 1695728938000
     },
     {
       "path": "/scripts/scripts.js",
-      "timestamp": 1695722900000
+      "timestamp": 1695728938000
     },
     {
       "path": "/styles/styles.css",
-      "timestamp": 1686032212000
+      "timestamp": 1695728938000
     },
     {
       "path": "/content/screens/menus/media_17710df9a502f677386e8eec1b0c60148bb497885.png?width=750&format=png&optimize=medium",
@@ -49,27 +49,27 @@
     },
     {
       "path": "/scripts/delayed.js",
-      "timestamp": 1686032212000
+      "timestamp": 1695728938000
     },
     {
       "path": "/blocks/columns/columns.css",
-      "timestamp": 1686032210000
+      "timestamp": 1695728937000
     },
     {
       "path": "/blocks/columns/columns.js",
-      "timestamp": 1686032211000
+      "timestamp": 1695728937000
     },
     {
       "path": "/blocks/menutable/menutable.js",
-      "timestamp": 1688471351000
+      "timestamp": 1695728937000
     },
     {
       "path": "/blocks/menutable/menutable.css",
-      "timestamp": 1693890759000
+      "timestamp": 1695728937000
     },
     {
       "path": "/blocks/menutable/qrcode.min.js",
-      "timestamp": 1686032212000
+      "timestamp": 1695728937000
     }
   ]
 }

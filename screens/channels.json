@@ -2,7 +2,7 @@
   "channels": [
     {
       "manifestPath": "/content/screens/menus/snack-sprint-v2.manifest.json",
-      "lastModified": "2023-09-26T11:48:48.253Z",
+      "lastModified": "2023-09-26T11:51:12.337Z",
       "hierarchy": [
         {
           "title": "screens",
@@ -19,7 +19,7 @@
     },
     {
       "manifestPath": "/content/screens/menus/snacksprintpos.manifest.json",
-      "lastModified": "2023-09-26T11:48:50.306Z",
+      "lastModified": "2023-09-26T11:51:14.022Z",
       "hierarchy": [
         {
           "title": "screens",
