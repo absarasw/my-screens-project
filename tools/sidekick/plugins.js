@@ -12,8 +12,10 @@
 
 
 const sk = document.querySelector('helix-sidekick');
-sk.addEventListener('custom:publish-channel', async () => {
-    setTimeout(() => {
-      alert('BUTTON CLICKED');
-    }, 1000);
+sk.addEventListener('custom:publish-channel', async (e) => {
+    if(e.detail && e.detail.config) {
+      console.log(JSON.stringify(e.detail.config));
+    } else {
+      console.log(details not available);
+    }
 });
