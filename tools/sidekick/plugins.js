@@ -66,6 +66,6 @@ sk.addEventListener('custom:publish-channel', async (e) => {
   }
     
   const prodUrl = `https://${host}${path}`;
-  window.location.replace(prodUrl);
+  window.location.href = prodUrl;
   
 });
