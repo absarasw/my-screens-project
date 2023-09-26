@@ -22,7 +22,7 @@ sk.addEventListener('custom:publish-channel', async (e) => {
   const options = {
     method: 'POST',
   };
-  const config = e.details.data.config;
+  const config = e.detail.data.config;
   const ref = config.ref;
   const repo = config.repo;
   const owner = config.owner;
