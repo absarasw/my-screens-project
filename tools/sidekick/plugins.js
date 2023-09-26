@@ -65,7 +65,7 @@ sk.addEventListener('custom:publish-channel', async (e) => {
      throw new Error(`Could not purge cache. Status: ${response.status}`);
   }
     
-  const prodUrl = `{host}{path}`;
+  const prodUrl = `${host}${path}`;
   window.location.replace(prodUrl);
   
 });
