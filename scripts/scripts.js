@@ -75,7 +75,6 @@ async function loadEager(doc) {
     document.addEventListener('helix-sidekick-ready', () => import('../tools/sidekick/plugins.js'), { once: true });
   }
 }
-}
 
 /**
  * Adds the favicon.
