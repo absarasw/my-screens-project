@@ -17,11 +17,10 @@
     },
     {
       "id": "publish-channel",
-      "title": "Publish",
+      "title": "Publish Channel",
       "event": "publish-channel",
       "passConfig": true,
       "passReferrer": true,
-      "url": "/tools/publishChannel/index.html",
       "environments": ["preview"]
     }
   ]
