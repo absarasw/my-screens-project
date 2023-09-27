@@ -1,7 +1,6 @@
 {
   "project": "My Screen Project",
-  "liveHost": "https://sample-screens-project.aem-screens.com",
-  "previewHost": "abc.com",
+  "liveHost": "sample-screens-project.aem-screens.com",
   "plugins": [
     {
       "id": "edit-preview",
