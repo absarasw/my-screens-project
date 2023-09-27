@@ -1,6 +1,6 @@
 {
   "project": "My Screen Project",
-  "liveHost": "sample-screens-project.aem-screens.com",
+  "liveHost": "https://sample-screens-project.aem-screens.com",
   "previewHost": "abc.com",
   "plugins": [
     {
