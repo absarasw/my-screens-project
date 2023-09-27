@@ -2,11 +2,7 @@
   "project": "My Screen Project",
   "liveHost": "sample-screens-project.aem-screens.com",
   "plugins": [
-    {
-      "id": "edit-preview",
-      "excludePaths": [ "**spreadsheets**" ],
-      "url": "/tools/myPlugin/index2.html"
-    },
+
     {
       "id": "preview-sheet",
       "title": "Preview Sheet",
