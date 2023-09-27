@@ -4,7 +4,8 @@
   "plugins": [
     {
       "id": "edit-preview",
-      "excludePaths": [ "**spreadsheets**" ]
+      "excludePaths": [ "**spreadsheets**" ],
+      "url": "/tools/myPlugin/index2.html"
     },
     {
       "id": "preview-sheet",
